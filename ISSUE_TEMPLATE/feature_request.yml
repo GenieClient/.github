@@ -1,0 +1,60 @@
+name: Feature Request
+description: Suggest an improvement or new feature for GenieClient
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve GenieClient.
+
+  - type: input
+    id: repo
+    attributes:
+      label: Repository
+      description: Which repository would this affect?
+      placeholder: Genie4, Maps, Plugins, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Feature Summary
+      description: Describe the feature or improvement.
+      placeholder: Explain the proposed feature.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Limitation
+      description: What problem does this solve?
+      placeholder: Describe the current limitation or frustration.
+    validations:
+      required: false
+
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed Solution
+      description: How should this work?
+      placeholder: Describe your suggested implementation or behavior.
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Any alternative approaches?
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      options:
+        - label: I may be willing to help implement this feature
